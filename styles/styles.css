@@ -1,5 +1,32 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url(navbar.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --fonte-principal:'Poppins';
+    --cor-de-fundo:#d6dbd2; 
+    --branco-cinza:#f7f7f7;
+    --preto:#000000;
+    --preto-azulado:#070614;
+    --amarelo:#d9e902;
+    --vermelho-claro:#e60202;
+    --vermelho:#bb0000;
+    --vermelho-degrade:linear-gradient(to right, red, yellow);
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+}
+
+li, a{
+    text-decoration: none;
+    list-style: none;
 }
