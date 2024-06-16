@@ -1,4 +1,5 @@
 @import url(navbar.css);
+@import url(pokemon.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap");
 
 *,
@@ -11,7 +12,7 @@
 
 :root{
     --fonte-principal:'Poppins';
-    --cor-de-fundo:#d6dbd2; 
+    --cor-de-fundo:#464757; 
     --branco-cinza:#f7f7f7;
     --preto:#000000;
     --preto-azulado:#070614;

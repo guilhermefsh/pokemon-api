@@ -16,29 +16,38 @@ h1 {
     text-align: center;
     position: relative;
     cursor: pointer;
+    overflow: hidden; /* Para esconder o overflow dos pseudoelementos */
 }
-  
+
 h1::before,
 h1::after {
     content: attr(data-text);
     position: absolute;
     top: 0;
     left: 0;
-    transition: 0.3s ease-out;
-  }
+    transition: transform 0.3s ease-out, -webkit-text-stroke-width 0.3s ease-out, color 0.3s ease-out;
+}
+
+h1::before {
+    color: #bb0000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--preto);
+    transform: translate(3px, -3px);
+}
+
+h1::after {
+    color: var(--amarelo);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--preto);
+    transform: translate(6px, -6px);
+}
 
 h1:hover::before {
-    color: #bb0000;
     transform: translate(3px, -3px);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--preto);
-  }
+}
 
 h1:hover::after {
-    color: var(--amarelo);
     transform: translate(6px, -6px);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--preto);
 }
 
 
@@ -73,16 +82,34 @@ h1:hover::after {
 }
 
 @media screen and (max-width:680px) {
-    .titulo-personalizado{
+    /* .titulo-personalizado{
         display: none;
-    }
+    } */
     
     .nav-container{
         font-size: 14px;
         font-weight: 100;
     }
 
-    .titulo{
+    /* .titulo{
         display: block;
+    } */
+}
+
+@media screen and (max-width:494px) {
+    .nav-link{
+        font-size: 14px;
+        font-weight:normal;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:444px) {
+
+    h1{
+        font-size: 16px;
     }
 }
