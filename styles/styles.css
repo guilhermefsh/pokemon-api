@@ -20,6 +20,8 @@
     --vermelho-claro:#e60202;
     --vermelho:#bb0000;
     --vermelho-degrade:linear-gradient(to right, red, yellow);
+    --cor-tabela:#dddddd;
+    --cor-escolhas:#e2d5d5;
 }
 
 body{

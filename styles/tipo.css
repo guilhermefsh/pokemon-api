@@ -20,7 +20,7 @@
 }
 
 th, td {
-    border: 1px solid #dddddd;
+    border: 1px solid var(--cor-tabela);
     text-align: left;
     padding: 8px;
     width: 98px;

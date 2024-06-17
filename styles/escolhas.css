@@ -9,7 +9,7 @@
     padding: 20px;
     color: var(--branco-cinza);
     border-radius: 20px;
-    filter: drop-shadow(2px 2px 2px red);
+    filter: drop-shadow(2px 2px 2px var(--vermelho-claro));
     gap: 20px;
 }
 
@@ -23,5 +23,5 @@
     border-radius: 10px;
     font-size: 14px;
     text-transform: uppercase;
-    background-color: rgb(216, 212, 208);
+    background-color: var(--cor-escolhas);
 }
