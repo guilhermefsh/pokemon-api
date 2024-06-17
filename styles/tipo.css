@@ -1,0 +1,54 @@
+.tipo-container{
+    color: white;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.table-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.titulo-tipo{
+    font-size: 40px;
+    color: var(--amarelo);
+    filter: drop-shadow(1px 1px 1px var(--vermelho));
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: 98px;
+}
+th {
+    background-color: var(--vermelho);
+}
+td img {
+    max-width: 30px;
+    max-height: 30px;
+    vertical-align: middle;
+}
+
+/* Página de créditos */
+
+.linkap{
+    color: var(--amarelo);
+    filter: drop-shadow(1px 1px 1px var(--vermelho));
+}
+
+.linkap:hover{
+    color: var(--vermelho);
+    filter: drop-shadow(1px 1px 1px var(--preto-azulado));
+}
+
+.credito-container{
+    color: white;
+    text-align: center;
+    margin: 40px 0px;
+    height: 70vh;
+}

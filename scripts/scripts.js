@@ -17,7 +17,7 @@ const colors = {
     flying: '#acacac',
     fighting: '#5c5c5c',
     dark:'#3e0044',
-    normal: '#F5F5F5'
+    normal: '#cfcfcf'
 }
 const colorsType = Object.keys(colors);
 
@@ -87,7 +87,7 @@ const createCard = (poke) => {
     const pokemonInnerHTML = `
         <div id="pokemon-card" data-type="${typePoke}">
             <div class="pokemon-img">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png" width="140" alt="">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png" width="120" alt="">
             </div>
             <div class="pokemon-info">
                 <h3 class="pokemon-name">${name}</h3>

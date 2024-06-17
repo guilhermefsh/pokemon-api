@@ -1,11 +1,10 @@
 @import url(navbar.css);
 @import url(pokemon.css);
 @import url(escolhas.css);
+@import url(tipo.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap");
 
-*,
-*::before,
-*::after {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,4 +30,15 @@ body{
 li, a{
     text-decoration: none;
     list-style: none;
+}
+
+hr{
+    border-color: var(--vermelho);
+}
+
+footer{
+    text-align: center;
+    margin: 12px;
+    font-size: 0.75rem;
+    color: var(--preto-azulado);
 }
