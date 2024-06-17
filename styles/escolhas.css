@@ -1,0 +1,27 @@
+#escolhas-pokemon{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+#escolhas{
+    background-color: var(--preto-azulado);
+    padding: 20px;
+    color: var(--branco-cinza);
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 2px red);
+    gap: 20px;
+}
+
+.lb-filtro{
+    margin-right: 1.75rem;
+}
+
+#filtro{
+    width: 140px;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: rgb(216, 212, 208);
+}

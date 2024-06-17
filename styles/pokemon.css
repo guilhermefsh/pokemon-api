@@ -1,6 +1,6 @@
 #pokemon{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     margin: 40px;
@@ -11,9 +11,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-gap: 8px;
+gap: 16px;
 margin-bottom: 40px;
 width: auto;
+max-width: 180px;
+max-height: 270px;
 padding: 14px;
 background-color: var(--preto-azulado);
 color: var(--branco-cinza);
