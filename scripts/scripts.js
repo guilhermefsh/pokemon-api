@@ -1,6 +1,7 @@
 //selecionando o container e filtro onde os cards ficarão.
 const container = document.querySelector("#pokemon");
 const filter = document.querySelector("#escolhas");
+const botao = document.querySelector('.btn');
 //cores para adicionar nos elementos
 const colors = {
     fire: '#e60202',
@@ -22,7 +23,7 @@ const colors = {
 const colorsType = Object.keys(colors);
 
 //quantidade de pokemons que queremos renderizar na página
-const quantPoke = 60;
+let quantPoke = 60;
 
 // variavel onde serão armazenados os pokemons após o filtro
 let allPoke = [];
@@ -125,5 +126,18 @@ filter.addEventListener('change', (e) =>{
     const selectedType = e.target.value;
     filterPokemons(selectedType);
 });
+
+//função para adicionar mais pokemons
+function atualizarQuantidade() {
+    quantPoke += 60;
+    const fetchPoke = async()=>{
+        for(let i = 1; i <= quantPoke; i++){
+            await getPoke(i);
+        }
+    }
+    fetchPoke()
+    console.log(`Valor atual: ${quantPoke}`);
+}
+botao.addEventListener('click', atualizarQuantidade);
 
 fetchPoke();
